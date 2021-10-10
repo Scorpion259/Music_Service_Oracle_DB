@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MusicApp_Db_Relational_model" id="5BA4E2EA-2BCD-C64A-36B4-84D221E89FE7" version="3.5">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 19:00:49 UTC</createdTime>
+<ownerDesignName>MusicApp_Db_Relational_model</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>5BA4E2EA-2BCD-C64A-36B4-84D221E89FE7</designId>
+</OSDM_Design>
