@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="17F0CB87-1EC7-B6AD-EC1C-8C2FBAF190CD" name="user">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:20 UTC</createdTime>
+<generatorID>64C214C8-E519-F877-32CF-87B23475D9E8</generatorID>
+<ownerDesignName>MusicApp_Db_Relational_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="573CF66E-0B28-33F2-C560-72CD17A709FC">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:20 UTC</createdTime>
+<generatorID>415720E7-EA76-3ACF-E817-00B1F658AA21</generatorID>
+<ownerDesignName>MusicApp_Db_Relational_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="username" id="E7E87DDF-C33A-94B4-0F61-25919DB7DDEF">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:20 UTC</createdTime>
+<generatorID>F991BA44-B47F-F38B-AC3E-E09E520F7BE0</generatorID>
+<ownerDesignName>MusicApp_Db_Relational_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="F41D6AE0-BBB4-3F6F-17D2-437ADAC6A62F">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:20 UTC</createdTime>
+<generatorID>A70EB22F-C51E-6EF6-CD9F-76F1FF5B0BB1</generatorID>
+<ownerDesignName>MusicApp_Db_Relational_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="61DA6889-C311-E34B-B6C5-CC25E9AEDA60">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:20 UTC</createdTime>
+<generatorID>A4173FBB-85F6-A0CE-FB41-8E8EABA07BDD</generatorID>
+<ownerDesignName>MusicApp_Db_Relational_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="profile_picture_path" id="E2F7889C-9515-5D4F-03B8-B8F6411E881E">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:20 UTC</createdTime>
+<generatorID>A03151B3-843A-CBF8-3182-169723ED89EF</generatorID>
+<ownerDesignName>MusicApp_Db_Relational_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="musician" id="3141C2D8-96A0-63B9-AB02-4DD55A53E829">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:20 UTC</createdTime>
+<generatorID>93415DFE-A344-207A-8065-5B09E1E4674C</generatorID>
+<ownerDesignName>MusicApp_Db_Relational_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>941F4F21-B660-F27F-AF4D-CADB39FDC5A0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff" id="A506E0B6-5B69-98BD-503B-AB55B96BBE34">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:20 UTC</createdTime>
+<generatorID>42F9F6F4-08BF-9BD4-388F-7D076CA1A60E</generatorID>
+<ownerDesignName>MusicApp_Db_Relational_model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>941F4F21-B660-F27F-AF4D-CADB39FDC5A0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E19089AC-324E-2381-1D3D-676D3E7611EE" name="user_PK">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:20 UTC</createdTime>
+<generatorID>D31CADAF-8207-84CF-4CE9-1BDBAAC7A731</generatorID>
+<ownerDesignName>MusicApp_Db_Relational_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="573CF66E-0B28-33F2-C560-72CD17A709FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

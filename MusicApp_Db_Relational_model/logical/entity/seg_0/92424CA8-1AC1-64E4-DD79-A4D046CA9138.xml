@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="92424CA8-1AC1-64E4-DD79-A4D046CA9138" name="genre_song">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 20:18:29 UTC</createdTime>
+<ownerDesignName>MusicApp_Db_Relational_model</ownerDesignName>
+<engineerTo>
+<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="genre_id" id="432C2A59-9869-A321-C5BC-44AC12891067">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:19:35 UTC</createdTime>
+<generatorID>4DE8FB03-D475-1605-6626-0695A7FB4A7F</generatorID>
+<ownerDesignName>MusicApp_Db_Relational_model</ownerDesignName>
+<engineerTo>
+<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+</engineerTo>
+<referedAttribute>1F4F9A83-29BD-7765-8DC3-4DFF35C7B20B</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="song_id" id="60E03B3E-1A97-51D6-9438-AAC3FF9784D2">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:19:52 UTC</createdTime>
+<generatorID>312C3E2B-7589-98CD-7907-EECE8418DEFE</generatorID>
+<ownerDesignName>MusicApp_Db_Relational_model</ownerDesignName>
+<engineerTo>
+<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+</engineerTo>
+<referedAttribute>4424D18A-2758-7FBD-6806-4F4EF35BF774</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="286DDCB1-9DA9-E2D6-068C-2AC24D9F9EE5" name="genre_song PK">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:19:35 UTC</createdTime>
+<ownerDesignName>MusicApp_Db_Relational_model</ownerDesignName>
+<engineerTo>
+<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>432C2A59-9869-A321-C5BC-44AC12891067</attributeRef>
+<attributeRef>60E03B3E-1A97-51D6-9438-AAC3FF9784D2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
