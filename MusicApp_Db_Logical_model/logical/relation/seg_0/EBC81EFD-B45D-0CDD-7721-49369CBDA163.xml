@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="musician_to_musician_user" directorySegmentName="seg_0" id="EBC81EFD-B45D-0CDD-7721-49369CBDA163">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:31:40 UTC</createdTime>
+<ownerDesignName>MusicApp_Db_Logical_model</ownerDesignName>
+<engineerTo>
+<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+</engineerTo>
+<sourcePk>D33C7832-A741-164F-9A18-D3B53A190F78</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AB4B5935-216D-1364-23D5-2A53C9420C69</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A9EF0BEC-1751-4697-5E3A-31F85CB063E2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
