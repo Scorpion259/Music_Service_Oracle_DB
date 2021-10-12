@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5262A402-1CF5-BD1C-DA2E-A50C6EC9BE55" name="song">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:20 UTC</createdTime>
+<generatorID>E26EEBAF-EFA1-3A92-1B1B-32C1F12430A8</generatorID>
+<ownerDesignName>MusicService_Db_Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="song_id" id="3275F484-62EB-E25A-ED9F-C68612CF50BA">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:20 UTC</createdTime>
+<generatorID>4424D18A-2758-7FBD-6806-4F4EF35BF774</generatorID>
+<ownerDesignName>MusicService_Db_Logical</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="name" id="1DF5C3B0-1AFF-9E45-0791-61247CF4570D">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:20 UTC</createdTime>
+<generatorID>CFFAE47D-E54F-CF46-C236-18C3A5DBDE3D</generatorID>
+<ownerDesignName>MusicService_Db_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="duration" id="A6E7276C-3DDD-A70C-76E7-796488539F04">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:20 UTC</createdTime>
+<generatorID>CAB43E1A-A571-79A7-A4AF-80A8DACC8C6C</generatorID>
+<ownerDesignName>MusicService_Db_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="favorite" id="9C38FF43-7D4E-4157-87B7-EC8665796A56">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:20 UTC</createdTime>
+<generatorID>F874A3DC-8144-5C9E-13CB-BD2A4DFD39D3</generatorID>
+<ownerDesignName>MusicService_Db_Logical</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>941F4F21-B660-F27F-AF4D-CADB39FDC5A0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="album_id" id="FBEE317E-7CB1-1C57-8256-919DB73CBFD6">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:20 UTC</createdTime>
+<generatorID>70958F23-7687-B00A-C59D-60E928DCC433</generatorID>
+<ownerDesignName>MusicService_Db_Logical</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="EDF564DC-7EBB-9272-1817-DA328408C1E8" referredColumn="6B8FD9DE-2260-7D68-0B67-9CC9559D8B0C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5A095F0D-1E9F-9C06-0821-CF272D8D6A14" name="song_PK">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:20 UTC</createdTime>
+<generatorID>0568603F-48D2-84CF-81D7-4B1BA1FCB3F7</generatorID>
+<ownerDesignName>MusicService_Db_Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3275F484-62EB-E25A-ED9F-C68612CF50BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A93DB08-CF00-E70D-E7F7-908146FC3B6A" name="song_album_FK">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:20 UTC</createdTime>
+<generatorID>ABF24013-C76E-F796-D541-297736A7A3D9</generatorID>
+<ownerDesignName>MusicService_Db_Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FBEE317E-7CB1-1C57-8256-919DB73CBFD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
