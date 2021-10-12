@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="F06C675C-03B6-ADDC-620B-6280F8FEBCE6" mainViewID="ABB2D9B0-E652-0840-0418-0BD0BE9E46C3">
-<createdBy>Виталий</createdBy>
-<createdTime>2021-10-10 19:00:49 UTC</createdTime>
-<ownerDesignName>MusicApp_Db_Relational_model</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</LogicalDesign>
