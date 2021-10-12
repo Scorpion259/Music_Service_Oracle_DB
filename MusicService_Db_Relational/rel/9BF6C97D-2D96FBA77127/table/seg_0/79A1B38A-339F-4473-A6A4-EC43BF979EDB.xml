@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="79A1B38A-339F-4473-A6A4-EC43BF979EDB" name="kmtm_genre_song">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:19 UTC</createdTime>
+<generatorID>92424CA8-1AC1-64E4-DD79-A4D046CA9138</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="genre_id" id="05C465DC-4FF6-4E75-BD52-786D04539ADD">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:19 UTC</createdTime>
+<generatorID>432C2A59-9869-A321-C5BC-44AC12891067</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="3E0B7EC4-3B5F-8474-BCB9-EA7AD63A3FD6" referredColumn="C6B4E6FB-C0C9-5892-8622-0D6D33431127"/>
+</associations>
+</Column>
+<Column name="song_id" id="BACF7E42-55E2-568E-CA5E-5D4DC6E1AF6A">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:19 UTC</createdTime>
+<generatorID>60E03B3E-1A97-51D6-9438-AAC3FF9784D2</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="949C1A90-E4F9-4D81-5AA8-C1E6AD9932DE" referredColumn="3275F484-62EB-E25A-ED9F-C68612CF50BA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6F15470A-3E15-8C53-69BD-4C910C83A460" name="pk_kmtm_genre_song">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:19 UTC</createdTime>
+<generatorID>286DDCB1-9DA9-E2D6-068C-2AC24D9F9EE5</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05C465DC-4FF6-4E75-BD52-786D04539ADD"/>
+<colUsage columnID="BACF7E42-55E2-568E-CA5E-5D4DC6E1AF6A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="582F49B7-FCCE-DAB4-BF7D-7CC24133713F" name="fk_genre_kmtm_genre_song">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:20 UTC</createdTime>
+<generatorID>4DE8FB03-D475-1605-6626-0695A7FB4A7F</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05C465DC-4FF6-4E75-BD52-786D04539ADD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4CB8478-1702-7CAB-BC79-B1EFA5CC507F" name="fk_song_kmtm_genre_song">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:41:20 UTC</createdTime>
+<generatorID>312C3E2B-7589-98CD-7907-EECE8418DEFE</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BACF7E42-55E2-568E-CA5E-5D4DC6E1AF6A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

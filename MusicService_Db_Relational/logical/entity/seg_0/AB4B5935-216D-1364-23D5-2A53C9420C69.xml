@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AB4B5935-216D-1364-23D5-2A53C9420C69" name="musician">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 20:36:31 UTC</createdTime>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<engineerTo>
+<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="musician_id" id="126AD47D-9033-DABD-3067-B95AAA198BFE">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 20:36:43 UTC</createdTime>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<engineerTo>
+<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="name" id="F9A8A194-D983-B0A7-DD05-0C1806E41F11">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 20:36:48 UTC</createdTime>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<engineerTo>
+<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="logo_path" id="540532C2-73FF-5A45-5DF8-A3DFA4AF400B">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 20:37:12 UTC</createdTime>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<engineerTo>
+<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="foundation_year" id="D4E5B9E1-A7AD-9CA8-9786-ADFB7E3F198A">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 20:37:39 UTC</createdTime>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<engineerTo>
+<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<domain>FBF50B79-FF69-291E-C3B5-A267840A5218</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="brief_biography" id="874B1146-FCF4-A53B-8BDC-46D6349E6761">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 20:43:50 UTC</createdTime>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<engineerTo>
+<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="favorite" id="199471BD-663C-AB12-B99D-5DA57C2FF332">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 20:44:14 UTC</createdTime>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<engineerTo>
+<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>941F4F21-B660-F27F-AF4D-CADB39FDC5A0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="current_label_id" id="1DCD1140-046C-C675-FCB8-0E57650549DB">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 21:27:53 UTC</createdTime>
+<generatorID>29AE0DF2-C56E-9971-B5F1-CD0C5BD447FC</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<engineerTo>
+<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+</engineerTo>
+<referedAttribute>AC86595D-7AC6-B2FD-8488-0CA5633D5F42</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D33C7832-A741-164F-9A18-D3B53A190F78" name="pk_musician">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-10 20:45:16 UTC</createdTime>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>126AD47D-9033-DABD-3067-B95AAA198BFE</newElementsIDs>
+<usedAttributes>
+<attributeRef>126AD47D-9033-DABD-3067-B95AAA198BFE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
