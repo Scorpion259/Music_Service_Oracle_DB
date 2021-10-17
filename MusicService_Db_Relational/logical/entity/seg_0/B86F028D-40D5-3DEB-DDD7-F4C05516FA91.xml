@@ -2,9 +2,10 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B86F028D-40D5-3DEB-DDD7-F4C05516FA91" name="action">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:55:08 UTC</createdTime>
+<comment><![CDATA[Таблица возможных действий с данными песен, альбомов, исполнителей и прочих таблиц]]></comment>
 <ownerDesignName>MusicService_Db_Relational</ownerDesignName>
 <engineerTo>
-<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+<item key="CFDADD8A-8E95-407E-FFBF-60692B4C1405" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -18,9 +19,10 @@
 <Attribute name="action_id" id="6470AE6F-F07F-8E64-84E5-F190F3A50486">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:55:17 UTC</createdTime>
+<comment><![CDATA[id действий, являющийся первичным ключом]]></comment>
 <ownerDesignName>MusicService_Db_Relational</ownerDesignName>
 <engineerTo>
-<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+<item key="CFDADD8A-8E95-407E-FFBF-60692B4C1405" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -35,9 +37,10 @@
 <Attribute name="name" id="A34F544F-CF08-E44C-B4B3-AB733D7B7AF8">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:55:37 UTC</createdTime>
+<comment><![CDATA[Наименование действия, к которому может быть гарантирован доступ]]></comment>
 <ownerDesignName>MusicService_Db_Relational</ownerDesignName>
 <engineerTo>
-<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+<item key="CFDADD8A-8E95-407E-FFBF-60692B4C1405" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -48,12 +51,14 @@
 <Attribute name="permission" id="5D74CCF8-3D97-2409-7F4C-9C151D537082">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:55:49 UTC</createdTime>
+<comment><![CDATA[Булевая переменная, определяющая разрешен ли доступ к определенному
+действию]]></comment>
 <ownerDesignName>MusicService_Db_Relational</ownerDesignName>
 <engineerTo>
-<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+<item key="CFDADD8A-8E95-407E-FFBF-60692B4C1405" value="true"/>
 </engineerTo>
 <use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <domain>941F4F21-B660-F27F-AF4D-CADB39FDC5A0</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
@@ -63,9 +68,8 @@
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:55:57 UTC</createdTime>
 <ownerDesignName>MusicService_Db_Relational</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="false"/>
+<item key="CFDADD8A-8E95-407E-FFBF-60692B4C1405" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <newElementsIDs>6470AE6F-F07F-8E64-84E5-F190F3A50486</newElementsIDs>

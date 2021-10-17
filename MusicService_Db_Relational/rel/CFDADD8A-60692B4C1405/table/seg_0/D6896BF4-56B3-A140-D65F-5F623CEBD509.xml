@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D6896BF4-56B3-A140-D65F-5F623CEBD509" name="author">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Таблица авторов песен]]></comment>
+<generatorID>BB9A3B3B-6978-4E54-D085-FCFC7D28BC51</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="author_id" id="0C72BF61-0E2C-2D49-EC56-1F671899A44A">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[id автора]]></comment>
+<generatorID>551B0306-45F9-CB08-AFB6-8908EDC41513</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="full_name" id="56071D3D-F1C7-B5DD-8EBC-694D24DFF27C">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Полное имя автора песни/песен]]></comment>
+<generatorID>E4A66396-3842-53C2-8082-A878BA1CB178</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9F422913-0B9C-3E92-6D7C-CE9B5801E3F3" name="pk_author">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<generatorID>0B26D2D3-F2A5-0E8C-525E-F134FA68EBF0</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C72BF61-0E2C-2D49-EC56-1F671899A44A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="51D8F7E5-A722-0B51-B015-C634F53936DC" containerWithKeyObject="BB36D90C-8952-F376-3E76-79A443968377" localFKIndex="1F75392F-B3D3-9EBB-BE31-820C89B371AB" name="fk_kmtm_author_song_author">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<generatorID>063FA2DB-C6AC-831F-8F17-87F80D076104</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<referredTableLongName>author</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D6896BF4-56B3-A140-D65F-5F623CEBD509</referredTableID>
+<keyObject>9F422913-0B9C-3E92-6D7C-CE9B5801E3F3</keyObject>
+<referredKeyID>9F422913-0B9C-3E92-6D7C-CE9B5801E3F3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>author_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -2,9 +2,10 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BB9A3B3B-6978-4E54-D085-FCFC7D28BC51" name="author">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 19:19:18 UTC</createdTime>
+<comment><![CDATA[Таблица авторов песен]]></comment>
 <ownerDesignName>MusicService_Db_Relational</ownerDesignName>
 <engineerTo>
-<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+<item key="CFDADD8A-8E95-407E-FFBF-60692B4C1405" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -18,9 +19,10 @@
 <Attribute name="author_id" id="551B0306-45F9-CB08-AFB6-8908EDC41513">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 19:26:52 UTC</createdTime>
+<comment><![CDATA[id автора]]></comment>
 <ownerDesignName>MusicService_Db_Relational</ownerDesignName>
 <engineerTo>
-<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+<item key="CFDADD8A-8E95-407E-FFBF-60692B4C1405" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -35,9 +37,10 @@
 <Attribute name="full_name" id="E4A66396-3842-53C2-8082-A878BA1CB178">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 19:31:25 UTC</createdTime>
+<comment><![CDATA[Полное имя автора песни/песен]]></comment>
 <ownerDesignName>MusicService_Db_Relational</ownerDesignName>
 <engineerTo>
-<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+<item key="CFDADD8A-8E95-407E-FFBF-60692B4C1405" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -51,9 +54,8 @@
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:17:28 UTC</createdTime>
 <ownerDesignName>MusicService_Db_Relational</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="false"/>
+<item key="CFDADD8A-8E95-407E-FFBF-60692B4C1405" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <newElementsIDs>551B0306-45F9-CB08-AFB6-8908EDC41513</newElementsIDs>

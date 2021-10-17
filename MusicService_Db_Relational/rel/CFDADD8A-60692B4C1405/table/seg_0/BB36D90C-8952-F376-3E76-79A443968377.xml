@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BB36D90C-8952-F376-3E76-79A443968377" name="kmtm_author_song">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Таблица, представляющая связь многие-ко-многим между авторами песен и песнями]]></comment>
+<generatorID>87D6D188-2123-2D50-F1B1-B8515B40AA68</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="author_song_id" id="596FB2D1-5A41-C87C-869D-C672C99BED2A">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[id связующей таблицы многие-ко-многим, являющийся первичным ключом]]></comment>
+<generatorID>96E4BCEC-890E-AC69-CFC7-70BC396CA1E0</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="author_id" id="E37F31F0-D0B1-F1E5-9E9B-227DC96971D4">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Внешний ключ на таблицу авторов песен]]></comment>
+<generatorID>F0A88C9B-548D-5AEA-1B07-1E5C9EA45E38</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="51D8F7E5-A722-0B51-B015-C634F53936DC" referredColumn="0C72BF61-0E2C-2D49-EC56-1F671899A44A"/>
+</associations>
+</Column>
+<Column name="song_id" id="B0E35835-3461-169F-9B0F-0D6A931F5DF0">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Внешний ключ на таблицу песен]]></comment>
+<generatorID>180463F0-5EB4-963E-0392-7B3873991D75</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="6AE2AF59-1AD4-E716-8A2B-44F2F266F866" referredColumn="4325142F-4996-C7C5-6EC2-14D684536934"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DFBD101B-84C3-DCBA-2D94-7546BA54BBCE" name="pk_kmtm_author_song">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<generatorID>05B54A63-305E-833F-5AB7-541ADEA5CDE1</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="596FB2D1-5A41-C87C-869D-C672C99BED2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB2C34B0-9E07-584A-E870-9719465A19A8" name="i_kmtm_author_song_author_id">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 21:04:40 UTC</createdTime>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E37F31F0-D0B1-F1E5-9E9B-227DC96971D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A1000644-A8FF-25DD-0A7E-034D0CAAB47F" name="i_kmtm_author_song_song_id">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 21:05:02 UTC</createdTime>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0E35835-3461-169F-9B0F-0D6A931F5DF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F75392F-B3D3-9EBB-BE31-820C89B371AB" name="fk_kmtm_author_song_author">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<generatorID>063FA2DB-C6AC-831F-8F17-87F80D076104</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E37F31F0-D0B1-F1E5-9E9B-227DC96971D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ECC3A559-5409-F5BF-E056-A15A5B6506A9" name="fk_kmtm_author_song_song">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<generatorID>28358227-F879-85E0-C723-EA950A3F5103</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0E35835-3461-169F-9B0F-0D6A931F5DF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

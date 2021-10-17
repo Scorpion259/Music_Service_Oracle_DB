@@ -2,9 +2,10 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="64C214C8-E519-F877-32CF-87B23475D9E8" name="service_user">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:50:28 UTC</createdTime>
+<comment><![CDATA[Таблица информации о пользователе]]></comment>
 <ownerDesignName>MusicService_Db_Relational</ownerDesignName>
 <engineerTo>
-<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+<item key="CFDADD8A-8E95-407E-FFBF-60692B4C1405" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -18,9 +19,10 @@
 <Attribute name="user_id" id="415720E7-EA76-3ACF-E817-00B1F658AA21">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:50:34 UTC</createdTime>
+<comment><![CDATA[id пользователей, являющийся первичным ключом]]></comment>
 <ownerDesignName>MusicService_Db_Relational</ownerDesignName>
 <engineerTo>
-<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+<item key="CFDADD8A-8E95-407E-FFBF-60692B4C1405" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -35,9 +37,11 @@
 <Attribute name="username" id="F991BA44-B47F-F38B-AC3E-E09E520F7BE0">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:50:39 UTC</createdTime>
+<comment><![CDATA[Никнейм пользователя, требуемый для регистрации и дальнейшего
+отображения]]></comment>
 <ownerDesignName>MusicService_Db_Relational</ownerDesignName>
 <engineerTo>
-<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+<item key="CFDADD8A-8E95-407E-FFBF-60692B4C1405" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -48,9 +52,10 @@
 <Attribute name="password" id="A70EB22F-C51E-6EF6-CD9F-76F1FF5B0BB1">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:51:04 UTC</createdTime>
+<comment><![CDATA[Пароль пользователя, требуемый для регистрации]]></comment>
 <ownerDesignName>MusicService_Db_Relational</ownerDesignName>
 <engineerTo>
-<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+<item key="CFDADD8A-8E95-407E-FFBF-60692B4C1405" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -61,9 +66,10 @@
 <Attribute name="email" id="A4173FBB-85F6-A0CE-FB41-8E8EABA07BDD">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:51:28 UTC</createdTime>
+<comment><![CDATA[Электронная почта пользователя, которая может служить альтернативным способом входа на аккаунт и дополнительным уровнем безопасности]]></comment>
 <ownerDesignName>MusicService_Db_Relational</ownerDesignName>
 <engineerTo>
-<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+<item key="CFDADD8A-8E95-407E-FFBF-60692B4C1405" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -75,37 +81,43 @@
 <Attribute name="profile_picture_path" id="A03151B3-843A-CBF8-3182-169723ED89EF">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:52:19 UTC</createdTime>
+<comment><![CDATA[Изображение аватара пользователя]]></comment>
 <ownerDesignName>MusicService_Db_Relational</ownerDesignName>
 <engineerTo>
-<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+<item key="CFDADD8A-8E95-407E-FFBF-60692B4C1405" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255</dataTypeSize>
-<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="musician" id="93415DFE-A344-207A-8065-5B09E1E4674C">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:53:07 UTC</createdTime>
+<comment><![CDATA[Булевая переменная, определяющая является ли пользователь
+исполнителем, что может изменить количество доступных ему
+возможностей]]></comment>
 <ownerDesignName>MusicService_Db_Relational</ownerDesignName>
 <engineerTo>
-<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+<item key="CFDADD8A-8E95-407E-FFBF-60692B4C1405" value="true"/>
 </engineerTo>
 <use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <domain>941F4F21-B660-F27F-AF4D-CADB39FDC5A0</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="staff" id="42F9F6F4-08BF-9BD4-388F-7D076CA1A60E">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:54:01 UTC</createdTime>
+<comment><![CDATA[Булевая переменная, определяющая является ли пользователь
+модератором, что может изменить количество доступных ему
+возможностей]]></comment>
 <ownerDesignName>MusicService_Db_Relational</ownerDesignName>
 <engineerTo>
-<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+<item key="CFDADD8A-8E95-407E-FFBF-60692B4C1405" value="true"/>
 </engineerTo>
 <use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <domain>941F4F21-B660-F27F-AF4D-CADB39FDC5A0</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
@@ -115,9 +127,8 @@
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:54:12 UTC</createdTime>
 <ownerDesignName>MusicService_Db_Relational</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="false"/>
+<item key="CFDADD8A-8E95-407E-FFBF-60692B4C1405" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <newElementsIDs>415720E7-EA76-3ACF-E817-00B1F658AA21</newElementsIDs>

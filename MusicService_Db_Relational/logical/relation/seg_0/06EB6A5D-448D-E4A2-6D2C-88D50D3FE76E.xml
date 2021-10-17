@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="genre_to_genre_song" directorySegmentName="seg_0" id="06EB6A5D-448D-E4A2-6D2C-88D50D3FE76E">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-15 12:53:49 UTC</createdTime>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<engineerTo>
+<item key="CFDADD8A-8E95-407E-FFBF-60692B4C1405" value="true"/>
+</engineerTo>
+<sourcePk>9D4A405F-0AA7-B4EC-6E2A-C63D78FC402B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2E54808D-A037-C0A1-83F2-8CB51B0BFA5A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>92424CA8-1AC1-64E4-DD79-A4D046CA9138</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1ED9797D-39E9-E741-8CAE-FA8FB5E86A91" name="action">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Таблица возможных действий с данными песен, альбомов, исполнителей и прочих таблиц]]></comment>
+<generatorID>B86F028D-40D5-3DEB-DDD7-F4C05516FA91</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="action_id" id="0BE86D29-E061-8C58-CE2E-CE0E02697193">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[id действий, являющийся первичным ключом]]></comment>
+<generatorID>6470AE6F-F07F-8E64-84E5-F190F3A50486</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="name" id="F7681338-9FF6-B5A1-50B0-265F4F404592">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Наименование действия, к которому может быть гарантирован доступ]]></comment>
+<generatorID>A34F544F-CF08-E44C-B4B3-AB733D7B7AF8</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="permission" id="C6216D69-0D1C-1639-986D-DB48D824414C">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Булевая переменная, определяющая разрешен ли доступ к определенному
+действию]]></comment>
+<generatorID>5D74CCF8-3D97-2409-7F4C-9C151D537082</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>941F4F21-B660-F27F-AF4D-CADB39FDC5A0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F54E2EEE-AA29-C1F1-477B-D8C48079C086" name="pk_action">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<generatorID>9CEA46AC-702A-7928-15AC-303F4BB5163D</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0BE86D29-E061-8C58-CE2E-CE0E02697193"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

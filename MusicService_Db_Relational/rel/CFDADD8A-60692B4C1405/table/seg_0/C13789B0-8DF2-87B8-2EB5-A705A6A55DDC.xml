@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C13789B0-8DF2-87B8-2EB5-A705A6A55DDC" name="service_user">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Таблица информации о пользователе]]></comment>
+<generatorID>64C214C8-E519-F877-32CF-87B23475D9E8</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="7655F1B3-241A-5DD3-39E2-B5AD08D99BB1">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[id пользователей, являющийся первичным ключом]]></comment>
+<generatorID>415720E7-EA76-3ACF-E817-00B1F658AA21</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="username" id="C038BDD5-C1FE-ECB0-9DD2-A9D021B5380F">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Никнейм пользователя, требуемый для регистрации и дальнейшего
+отображения]]></comment>
+<generatorID>F991BA44-B47F-F38B-AC3E-E09E520F7BE0</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="778DD08E-B74F-A011-6BEC-A3E6B7AF401F">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Пароль пользователя, требуемый для регистрации]]></comment>
+<generatorID>A70EB22F-C51E-6EF6-CD9F-76F1FF5B0BB1</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="1AF03093-1526-F997-5602-87B5245EC880">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Электронная почта пользователя, которая может служить альтернативным способом входа на аккаунт и дополнительным уровнем безопасности]]></comment>
+<generatorID>A4173FBB-85F6-A0CE-FB41-8E8EABA07BDD</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="profile_picture_path" id="92447014-2C94-6E90-2110-38F284B4EC64">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Изображение аватара пользователя]]></comment>
+<generatorID>A03151B3-843A-CBF8-3182-169723ED89EF</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="musician" id="F72E1700-2A29-FD5B-D73F-F5F9D16E5CB5">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Булевая переменная, определяющая является ли пользователь
+исполнителем, что может изменить количество доступных ему
+возможностей]]></comment>
+<generatorID>93415DFE-A344-207A-8065-5B09E1E4674C</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>941F4F21-B660-F27F-AF4D-CADB39FDC5A0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff" id="309BB7AC-C1CF-D92D-52C7-2AAF954CA792">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Булевая переменная, определяющая является ли пользователь
+модератором, что может изменить количество доступных ему
+возможностей]]></comment>
+<generatorID>42F9F6F4-08BF-9BD4-388F-7D076CA1A60E</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>941F4F21-B660-F27F-AF4D-CADB39FDC5A0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D349CB0D-2AC7-D360-04FE-D96B05DCAE3D" name="pk_service_user">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<generatorID>D31CADAF-8207-84CF-4CE9-1BDBAAC7A731</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7655F1B3-241A-5DD3-39E2-B5AD08D99BB1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

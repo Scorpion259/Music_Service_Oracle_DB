@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B8398FCD-DBCA-4519-E1B3-9D9D1859F063" name="kmtm_action_user">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Таблица, представляющая связь многие-ко-многим между действиями и пользователями, определяющая какие действия
+может совершать пользователь (добавление/удаление песен, изменение информации об исполнителе и тд)]]></comment>
+<generatorID>1789AEE7-0FB5-8379-73BB-6D43AD5AD1DE</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="action_user_id" id="DE152484-68A5-C652-0F46-461C428F585C">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[id связующей таблицы, являющийся превичным ключом]]></comment>
+<generatorID>91BCEA3D-0F20-5959-9349-9D6A828933D9</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="action_id" id="6F301B4A-6DD6-3439-7CBD-54B2920618C3">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Внешний ключ на таблицу действий, определяющий какие действия
+доступны пользователю]]></comment>
+<generatorID>BB2CA20B-3D77-BCF8-3E6E-B886CD4EA405</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="12992889-C49F-6215-703C-5B037BEF6B40" referredColumn="0BE86D29-E061-8C58-CE2E-CE0E02697193"/>
+</associations>
+</Column>
+<Column name="user_id" id="8E98BF9C-B73D-B634-2606-DF5005AF2E8C">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Внешний ключ на таблицу пользователей, определяющий какому именно
+пользователю доступны некоторые действия]]></comment>
+<generatorID>0238AC21-442D-67F9-296F-CB9B0F97AF41</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="0014922E-E23A-6787-F8E7-500CD77C89D4" referredColumn="7655F1B3-241A-5DD3-39E2-B5AD08D99BB1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B991722-A716-E29C-452A-DE5427E15D4F" name="pk_kmtm_action_user">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<generatorID>1BE40998-A6E8-7AAA-B0F9-D82CCF7CD70A</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE152484-68A5-C652-0F46-461C428F585C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D68F09BC-7E09-A6F4-D6F8-B3EFF7A58868" name="i_kmtm_action_user_action_id">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 21:12:10 UTC</createdTime>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F301B4A-6DD6-3439-7CBD-54B2920618C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0D10993-7A0A-9A93-FAE8-9632F17D43B5" name="i_kmtm_action_user_user_id">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 21:12:19 UTC</createdTime>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E98BF9C-B73D-B634-2606-DF5005AF2E8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2418E286-7A8F-447F-47E7-72B2E0D2FA8C" name="fk_kmtm_action_user_action">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<generatorID>3EFB8F06-309D-D186-7641-04A92AD324E7</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F301B4A-6DD6-3439-7CBD-54B2920618C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4A61FFB-FFC7-6119-9729-808B3F93508C" name="fk_kmtm_action_user_user">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<generatorID>18536C27-ACE8-2DA1-02B2-EBA9B3EABE85</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E98BF9C-B73D-B634-2606-DF5005AF2E8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

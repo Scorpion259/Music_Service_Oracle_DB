@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C446EEBC-E587-E535-B561-7BC384DD7D6E" name="record_label">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Таблица лейблов звукозаписи, содержащая их названия для дополнения информации об альбомах и исполнителях]]></comment>
+<generatorID>2F5D0463-9407-075D-7CE7-BF371EB407C9</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="record_label_id" id="15405F03-C29B-C683-DAA4-81F8D40B4869">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[id лейбла звукозаписи, являющийся первичным ключом]]></comment>
+<generatorID>AC86595D-7AC6-B2FD-8488-0CA5633D5F42</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="name" id="8EE0585B-CAE1-EC0E-954D-17C784779CB6">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Название лейбла звукозаписи]]></comment>
+<generatorID>DBA9C0DF-2517-7EFE-C11F-69BF67F524EF</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="53580305-FFDE-B7BE-DA70-2A0B560D9683" name="pk_record_label">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<generatorID>A5E5E231-3274-714E-CA6A-CEDBA87C6C5B</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15405F03-C29B-C683-DAA4-81F8D40B4869"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

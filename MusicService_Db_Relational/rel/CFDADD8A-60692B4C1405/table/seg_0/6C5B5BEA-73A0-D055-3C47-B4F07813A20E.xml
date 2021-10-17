@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6C5B5BEA-73A0-D055-3C47-B4F07813A20E" name="song">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Таблица песен]]></comment>
+<generatorID>E26EEBAF-EFA1-3A92-1B1B-32C1F12430A8</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="song_id" id="4325142F-4996-C7C5-6EC2-14D684536934">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[id песен, являющийся первичным ключом]]></comment>
+<generatorID>4424D18A-2758-7FBD-6806-4F4EF35BF774</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="name" id="15DE2839-7E09-EE70-9246-E9C344E9C65F">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Название песни]]></comment>
+<generatorID>CFFAE47D-E54F-CF46-C236-18C3A5DBDE3D</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="duration" id="96A11165-1D5C-1FB9-D1BB-53E6A11AE1A1">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Продолжительность песни]]></comment>
+<generatorID>CAB43E1A-A571-79A7-A4AF-80A8DACC8C6C</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="favorite" id="D73D3255-6F09-6FE8-B690-8E4A50ADD404">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Булевая переменная, определяющая является ли песня понравившейся]]></comment>
+<generatorID>F874A3DC-8144-5C9E-13CB-BD2A4DFD39D3</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>941F4F21-B660-F27F-AF4D-CADB39FDC5A0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="album_id" id="BA8AC8FA-0288-4F64-9703-8CFD3CB3ABE0">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<comment><![CDATA[Внешний ключ на таблицу музыкальных альбомов]]></comment>
+<generatorID>70958F23-7687-B00A-C59D-60E928DCC433</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="10AEA294-AD62-83D4-EF41-300FA160E9FE" referredColumn="B6885222-8C2A-CA4D-900B-0CC6534D1706"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2C251772-592F-D481-F5B7-338778D37AD4" name="pk_song">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<generatorID>0568603F-48D2-84CF-81D7-4B1BA1FCB3F7</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4325142F-4996-C7C5-6EC2-14D684536934"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8857EAE1-C53D-44A1-4AF9-D191263ACA8A" name="i_song_album_id">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 21:08:18 UTC</createdTime>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA8AC8FA-0288-4F64-9703-8CFD3CB3ABE0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ACA28457-6E9B-1A64-9A45-D0CEF5A626F8" name="fk_song_album">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-17 20:51:40 UTC</createdTime>
+<generatorID>ABF24013-C76E-F796-D541-297736A7A3D9</generatorID>
+<ownerDesignName>MusicService_Db_Relational</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA8AC8FA-0288-4F64-9703-8CFD3CB3ABE0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
