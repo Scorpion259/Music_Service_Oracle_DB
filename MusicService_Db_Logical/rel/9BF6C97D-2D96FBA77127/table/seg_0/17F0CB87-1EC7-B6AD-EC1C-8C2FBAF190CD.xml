@@ -80,7 +80,7 @@
 <generatorID>93415DFE-A344-207A-8065-5B09E1E4674C</generatorID>
 <ownerDesignName>MusicService_Db_Logical</ownerDesignName>
 <use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <domain>941F4F21-B660-F27F-AF4D-CADB39FDC5A0</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -91,7 +91,7 @@
 <generatorID>42F9F6F4-08BF-9BD4-388F-7D076CA1A60E</generatorID>
 <ownerDesignName>MusicService_Db_Logical</ownerDesignName>
 <use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <domain>941F4F21-B660-F27F-AF4D-CADB39FDC5A0</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>

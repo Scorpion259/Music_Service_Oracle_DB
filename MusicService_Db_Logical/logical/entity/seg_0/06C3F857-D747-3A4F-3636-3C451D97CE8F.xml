@@ -2,6 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="06C3F857-D747-3A4F-3636-3C451D97CE8F" name="playlist">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:45:55 UTC</createdTime>
+<comment><![CDATA[Таблица музыкальных плейлистов]]></comment>
 <ownerDesignName>MusicService_Db_Logical</ownerDesignName>
 <engineerTo>
 <item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
@@ -18,6 +19,7 @@
 <Attribute name="playlist_id" id="0A986676-1B24-613F-9B3C-28FE6B1388AB">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:46:02 UTC</createdTime>
+<comment><![CDATA[id плейлистов, являющийся первичным ключом]]></comment>
 <ownerDesignName>MusicService_Db_Logical</ownerDesignName>
 <engineerTo>
 <item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
@@ -35,6 +37,7 @@
 <Attribute name="name" id="896EB3D9-1026-077B-CCDF-CF81296FB122">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:46:08 UTC</createdTime>
+<comment><![CDATA[Название музыкального плейлиста]]></comment>
 <ownerDesignName>MusicService_Db_Logical</ownerDesignName>
 <engineerTo>
 <item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
@@ -48,6 +51,7 @@
 <Attribute name="description" id="0643791B-F96F-36A9-B2AD-3D5D640A9B2C">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:46:34 UTC</createdTime>
+<comment><![CDATA[Описание плейлиста, составляемое пользователем]]></comment>
 <ownerDesignName>MusicService_Db_Logical</ownerDesignName>
 <engineerTo>
 <item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
@@ -61,6 +65,7 @@
 <Attribute name="user_id" id="14278C22-34BA-44AB-9C51-50E9D976F209">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 21:30:02 UTC</createdTime>
+<comment><![CDATA[Внешний ключ на таблицу пользователей]]></comment>
 <generatorID>1FFA6D86-3FB9-114B-1985-8AADD36167C1</generatorID>
 <ownerDesignName>MusicService_Db_Logical</ownerDesignName>
 <engineerTo>

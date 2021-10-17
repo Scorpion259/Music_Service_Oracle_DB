@@ -42,7 +42,7 @@
 <generatorID>5D74CCF8-3D97-2409-7F4C-9C151D537082</generatorID>
 <ownerDesignName>MusicService_Db_Logical</ownerDesignName>
 <use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <domain>941F4F21-B660-F27F-AF4D-CADB39FDC5A0</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>

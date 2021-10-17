@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="song_to_kmtm_author_song" directorySegmentName="seg_0" id="28358227-F879-85E0-C723-EA950A3F5103">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-15 12:51:54 UTC</createdTime>
+<ownerDesignName>MusicService_Db_Logical</ownerDesignName>
+<engineerTo>
+<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+</engineerTo>
+<sourcePk>0568603F-48D2-84CF-81D7-4B1BA1FCB3F7</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E26EEBAF-EFA1-3A92-1B1B-32C1F12430A8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>87D6D188-2123-2D50-F1B1-B8515B40AA68</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

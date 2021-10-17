@@ -2,6 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="92424CA8-1AC1-64E4-DD79-A4D046CA9138" name="kmtm_genre_song">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:18:29 UTC</createdTime>
+<comment><![CDATA[Таблица, представляющая связь многие-ко-многим между музыкальными жанрами и песнями]]></comment>
 <ownerDesignName>MusicService_Db_Logical</ownerDesignName>
 <engineerTo>
 <item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
@@ -15,10 +16,29 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="genre_id" id="432C2A59-9869-A321-C5BC-44AC12891067">
+<Attribute name="genre_song_id" id="D20511E8-B390-DA15-A94D-290E9673BF4C">
 <createdBy>Виталий</createdBy>
-<createdTime>2021-10-10 21:19:35 UTC</createdTime>
-<generatorID>4DE8FB03-D475-1605-6626-0695A7FB4A7F</generatorID>
+<createdTime>2021-10-15 12:52:43 UTC</createdTime>
+<comment><![CDATA[id связующей таблицы жанров и песен, являющийся первичным ключом]]></comment>
+<ownerDesignName>MusicService_Db_Logical</ownerDesignName>
+<engineerTo>
+<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C5918B22-7F7B-06CA-15CF-3BE0BF5A6B78</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="genre_id" id="707A3FF0-A85C-F46A-77F6-51C10D52B518">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-15 12:53:49 UTC</createdTime>
+<comment><![CDATA[Внешний ключ на таблицу музыкальных жанров]]></comment>
+<generatorID>06EB6A5D-448D-E4A2-6D2C-88D50D3FE76E</generatorID>
 <ownerDesignName>MusicService_Db_Logical</ownerDesignName>
 <engineerTo>
 <item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
@@ -34,10 +54,11 @@
 </rangeDef>
 </listOfRanges>
 </Attribute>
-<Attribute name="song_id" id="60E03B3E-1A97-51D6-9438-AAC3FF9784D2">
+<Attribute name="song_id" id="C2DABDEE-A653-C5E1-579B-924994E36589">
 <createdBy>Виталий</createdBy>
-<createdTime>2021-10-10 21:19:52 UTC</createdTime>
-<generatorID>312C3E2B-7589-98CD-7907-EECE8418DEFE</generatorID>
+<createdTime>2021-10-15 12:54:06 UTC</createdTime>
+<comment><![CDATA[Внешний ключ на таблицу песен]]></comment>
+<generatorID>B41536AF-AD91-802A-A80F-86CF507149CE</generatorID>
 <ownerDesignName>MusicService_Db_Logical</ownerDesignName>
 <engineerTo>
 <item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
@@ -55,18 +76,17 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="286DDCB1-9DA9-E2D6-068C-2AC24D9F9EE5" name="pk_kmtm_genre_song">
+<identifier id="E3C396FA-0812-9C81-B8CE-9D3C917AE31E" name="pk_genre_song">
 <createdBy>Виталий</createdBy>
-<createdTime>2021-10-10 21:19:35 UTC</createdTime>
+<createdTime>2021-10-15 12:52:55 UTC</createdTime>
 <ownerDesignName>MusicService_Db_Logical</ownerDesignName>
 <engineerTo>
 <item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
 </engineerTo>
 <pk>true</pk>
-<newElementsIDs>432C2A59-9869-A321-C5BC-44AC12891067,60E03B3E-1A97-51D6-9438-AAC3FF9784D2</newElementsIDs>
+<newElementsIDs>D20511E8-B390-DA15-A94D-290E9673BF4C</newElementsIDs>
 <usedAttributes>
-<attributeRef>432C2A59-9869-A321-C5BC-44AC12891067</attributeRef>
-<attributeRef>60E03B3E-1A97-51D6-9438-AAC3FF9784D2</attributeRef>
+<attributeRef>D20511E8-B390-DA15-A94D-290E9673BF4C</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

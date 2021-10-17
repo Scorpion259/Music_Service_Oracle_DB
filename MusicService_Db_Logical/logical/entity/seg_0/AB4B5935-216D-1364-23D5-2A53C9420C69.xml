@@ -2,6 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AB4B5935-216D-1364-23D5-2A53C9420C69" name="musician">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:36:31 UTC</createdTime>
+<comment><![CDATA[Таблица музыкальных исполнителей]]></comment>
 <ownerDesignName>MusicService_Db_Logical</ownerDesignName>
 <engineerTo>
 <item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
@@ -18,6 +19,7 @@
 <Attribute name="musician_id" id="126AD47D-9033-DABD-3067-B95AAA198BFE">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:36:43 UTC</createdTime>
+<comment><![CDATA[id музыкальных исполнителей, являющийся первичным ключом]]></comment>
 <ownerDesignName>MusicService_Db_Logical</ownerDesignName>
 <engineerTo>
 <item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
@@ -35,6 +37,7 @@
 <Attribute name="name" id="F9A8A194-D983-B0A7-DD05-0C1806E41F11">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:36:48 UTC</createdTime>
+<comment><![CDATA[Название группы, псевдоним или имя исполнителя]]></comment>
 <ownerDesignName>MusicService_Db_Logical</ownerDesignName>
 <engineerTo>
 <item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
@@ -48,19 +51,20 @@
 <Attribute name="logo_path" id="540532C2-73FF-5A45-5DF8-A3DFA4AF400B">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:37:12 UTC</createdTime>
+<comment><![CDATA[Изображение логотипа музыкального исполнителя]]></comment>
 <ownerDesignName>MusicService_Db_Logical</ownerDesignName>
 <engineerTo>
 <item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255</dataTypeSize>
-<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="foundation_year" id="D4E5B9E1-A7AD-9CA8-9786-ADFB7E3F198A">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:37:39 UTC</createdTime>
+<comment><![CDATA[Год основания группы или начала карьеры сольного исполнителя]]></comment>
 <ownerDesignName>MusicService_Db_Logical</ownerDesignName>
 <engineerTo>
 <item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
@@ -79,6 +83,7 @@
 <Attribute name="brief_biography" id="874B1146-FCF4-A53B-8BDC-46D6349E6761">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:43:50 UTC</createdTime>
+<comment><![CDATA[Краткая биография музыкального исполнителя]]></comment>
 <ownerDesignName>MusicService_Db_Logical</ownerDesignName>
 <engineerTo>
 <item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
@@ -92,18 +97,21 @@
 <Attribute name="favorite" id="199471BD-663C-AB12-B99D-5DA57C2FF332">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 20:44:14 UTC</createdTime>
+<comment><![CDATA[Булевая переменная, определяющая является ли исполнитель
+понравившимся]]></comment>
 <ownerDesignName>MusicService_Db_Logical</ownerDesignName>
 <engineerTo>
 <item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
 </engineerTo>
 <use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <domain>941F4F21-B660-F27F-AF4D-CADB39FDC5A0</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="current_label_id" id="1DCD1140-046C-C675-FCB8-0E57650549DB">
 <createdBy>Виталий</createdBy>
 <createdTime>2021-10-10 21:27:53 UTC</createdTime>
+<comment><![CDATA[Внешний ключ на таблицу лейблов звукозаписи, определяющий под каким лейблом исполнитель выступает в настоящее время]]></comment>
 <generatorID>29AE0DF2-C56E-9971-B5F1-CD0C5BD447FC</generatorID>
 <ownerDesignName>MusicService_Db_Logical</ownerDesignName>
 <engineerTo>

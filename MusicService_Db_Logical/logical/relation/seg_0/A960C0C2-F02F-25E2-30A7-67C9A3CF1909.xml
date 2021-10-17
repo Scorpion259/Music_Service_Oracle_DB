@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="song_to_song_playlist" directorySegmentName="seg_0" id="A960C0C2-F02F-25E2-30A7-67C9A3CF1909">
+<createdBy>Виталий</createdBy>
+<createdTime>2021-10-15 12:55:50 UTC</createdTime>
+<ownerDesignName>MusicService_Db_Logical</ownerDesignName>
+<engineerTo>
+<item key="9BF6C97D-4B9B-3C48-A587-2D96FBA77127" value="true"/>
+</engineerTo>
+<sourcePk>0568603F-48D2-84CF-81D7-4B1BA1FCB3F7</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E26EEBAF-EFA1-3A92-1B1B-32C1F12430A8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>78230563-9D9C-9F91-35A9-B2EA6B7AF52C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
